@@ -13,17 +13,18 @@
     <link href="css/footer-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/text-styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/anchor.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/typewriter.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 
-<div class="navbar-fixed">
-    <nav class="white" role="navigation">
+<div class="navbar-fixed my-hide">
+    <nav class="nav-color" role="navigation">
         <div class="nav-wrapper container">
             <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="#">Basic Info</a></li>
+                <li><a href="#">Basic Info</a></li>
                 <li><a href="#interests">My interests</a></li>
                 <li><a href="#experience">Experience</a></li>
-<!--                <li><a href="#">Portfolio</a></li>-->
+                <!--                <li><a href="#">Portfolio</a></li>-->
             </ul>
         </div>
     </nav>
@@ -31,13 +32,11 @@
 
 
 <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+    <div id="typewriter-container" class="section no-pad-bot hey-section">
         <div class="container">
-            <br><br>
-
-            <div class="row center">
-                <h5 class="header center col s12">Hey, I'm</h5>
-                <h1 class="header white-text text-lighten-2">-Vladimir Dabic-</h1>
+            <div class="row center typewriter">
+                <h5 class="header center col s12" >Hey, I'm</h5>
+                <h1 class="header white-text text-lighten-2">-Vladimir-</h1>
             </div>
         </div>
     </div>
@@ -46,15 +45,15 @@
 
 <div class="container" id="info">
     <div class="section">
-        <div class="row">
+        <div class="row" >
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>Basic Information</h4>
+                <h4 class="info-heading">Basic Information</h4>
                 <div class="divider"></div>
                 <p class="left-align light">My name is Vladimir Dabic, I'm 23 years old and I come from Belgrade,
                     Serbia.
                     I am a senior (fourth year) student in Computer science at
-                    <a href="https://www.raf.edu.rs">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
+                    <a class="racunarski-link" onclick="window.open('https://raf.edu.rs/', '_blank')">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
                     it represents the way of life. The logic and thinking I got from it, helps me deal with everyday
                     situations. I'm
                     a very friendly and communicative person, and I love spending quality time with friends and family.
@@ -67,12 +66,10 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row center">
-                <h5 class="header col s12 light">neki tekst videcemo sta ce biti</h5>
-            </div>
+
         </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="interests.png" alt="Unsplashed background img 2"></div>
 </div>
 
 <div class="container">
@@ -80,7 +77,7 @@
         <div class="row">
             <div class="center col s12">
                 <a id="interests"></a>
-                <h4>My interests</h4>
+                <h4 class="info-heading">My interests</h4>
             </div>
         </div>
         <div class="divider"></div>
@@ -88,8 +85,8 @@
         <div class="row">
             <div class="col s12 m4">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">book</i></h2>
-                    <h5 class="center">Books</h5>
+                    <h2 class="center my-pink"><i class="material-icons">book</i></h2>
+                    <h5 class="center my-heading-italic">Books</h5>
 
                     <p class="light">When it comes to books, I am interested in anything that makes me say, "Neat" to
                         myself, which could be anything on any given day. I love to learn, I love obscure details,
@@ -97,10 +94,10 @@
                         practices
                         about coding, design patterns in programming, agile techniques, project management, etc.
                         Some of the best books on the subjects that I'm currently reading are:
-                        <span class="brown-text text-bold">
+                        <span class="interest-blue">
                             Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin
                         </span> and
-                        <span class="brown-text text-bold">
+                        <span class="interest-blue">
                             Managing the Unmanageable: Rules, Tools and Insights for Managing Software
                             People and Teams by Mickey W. Mantle, Ron Lichty.
                         </span>
@@ -110,8 +107,8 @@
 
             <div class="col s12 m4">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">computer</i></h2>
-                    <h5 class="center">Hardware</h5>
+                    <h2 class="center my-pink"><i class="material-icons">computer</i></h2>
+                    <h5 class="center my-heading-italic">Hardware</h5>
 
                     <p class="light">I simply love working with hardware, especially computers. Since a young age I've
                         always
@@ -121,7 +118,7 @@
                         mind. I'm also
                         interested in building some simple things with Arduino boards, that will automate some stuff
                         that I do
-                        on daily basics.
+                        on daily basis.
                         My last project was a small fontain that I've built for my cat, nothing special, but she loved
                         it!</p>
                 </div>
@@ -129,20 +126,20 @@
 
             <div class="col s12 m4">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">accessibility</i></h2>
-                    <h5 class="center">Martial arts</h5>
+                    <h2 class="center my-pink"><i class="material-icons">accessibility</i></h2>
+                    <h5 class="center my-heading-italic">Martial arts</h5>
 
-                    <p class="light">Every man has to find a way to get rid of negative energy and emotions, and this
+                    <p class="light">Everyone has to find a way to get rid of negative energy and emotions, and this
                         was mine.
-                        I say was because I'm not practicing martial arts for quite some time now. I had multiple
+                        I say "<span style="font-style: italic; font-weight: bolder">was</span>" because I'm not practicing martial arts for quite some time now. I had multiple
                         injuries
-                        on both my shoulders and I had to make a long pause. I still
+                        on both of my shoulders and I had to make a long break. I still
                         watch it on TV every now and then and remember the days when I was in a top form and health. It
                         helped me develop
                         a different, better, mindset and improve my self-confidence. Some people might think that
                         martial arts are a violent sport, but trust me, it isn't. There are far more injuries and dirty
                         plays
-                        in some "less violent" sports like basketball and football. Martial arts are as its name says,
+                        in some "less violent" sports like basketball and football. Martial arts are, as its name says,
                         an art.</p>
                 </div>
             </div>
@@ -154,64 +151,87 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row center">
-                <h5 class="header col s12 light">neki tekst videcemo sta ce biti</h5>
-            </div>
         </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
 <div class="container">
     <div class="section">
         <div class="row">
             <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4 id="experience">Experience</h4>
+                <a id="experience"></a>
+                <h4 class="info-heading">Experience</h4>
                 <div class="divider"></div>
-                <p class="left-align light">My name is Vladimir Dabic, I'm 23 years old and I come from Belgrade,
-                    Serbia.
-                    I am a senior (fourth year) student in Computer science at
-                    <a href="https://www.raf.edu.rs">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
-                    it represents the way of life. The logic and thinking I got from it, helps me deal with everyday
-                    situations. I'm
-                    a very friendly and communicative person, and I love spending quality time with friends and family.
-                </p>
-                <br>
-                <p class="left-align light">My name is Vladimir Dabic, I'm 23 years old and I come from Belgrade,
-                    Serbia.
-                    I am a senior (fourth year) student in Computer science at
-                    <a href="https://www.raf.edu.rs">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
-                    it represents the way of life. The logic and thinking I got from it, helps me deal with everyday
-                    situations. I'm
-                    a very friendly and communicative person, and I love spending quality time with friends and family.
-                </p>
-                <br>
-                <p class="left-align light">My name is Vladimir Dabic, I'm 23 years old and I come from Belgrade,
-                    Serbia.
-                    I am a senior (fourth year) student in Computer science at
-                    <a href="https://www.raf.edu.rs">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
-                    it represents the way of life. The logic and thinking I got from it, helps me deal with everyday
-                    situations. I'm
-                    a very friendly and communicative person, and I love spending quality time with friends and family.
-                </p>
-                <br>
-                <p class="left-align light">My name is Vladimir Dabic, I'm 23 years old and I come from Belgrade,
-                    Serbia.
-                    I am a senior (fourth year) student in Computer science at
-                    <a href="https://www.raf.edu.rs">"Racunarski fakultet"</a> in Belgrade. I love programming, for me,
-                    it represents the way of life. The logic and thinking I got from it, helps me deal with everyday
-                    situations. I'm
-                    a very friendly and communicative person, and I love spending quality time with friends and family.
-                </p>
+
+                <div class="experience-container">
+                    <img class="experience-logos" src="logos/all.png">
+                    <div class="experience-item">
+                        <p class="left-align light exp">
+                            <span class="text-bold year">December 2019. - present</span>
+                            <br>
+                            Part of organisation called RAF Lab. Currently developing the complete system, for students,
+                            administrators and bookkeeping, that will be used as offical service of “Računarski fakultet” in
+                            Belgrade. <span class="tech">Angular</span> is being used for front-end development and <span
+                                class="tech">Spring Boot</span> and <span class="tech">.Net Core</span> for back-end.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="left-align light exp">
+                            <span class="text-bold year">November 2019. - January 2020.</span>
+                            <br>
+                            Developed an autonomous agent that is able to trade cryptocurrencies independently, on the world’s
+                            largest cryptocurrency exchanges called Cex and Binance. The agent was developed in <span
+                                class="tech">Python3</span>.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="left-align light exp">
+                            <span class="text-bold year">11. - 12. May 2019.</span>
+                            <br>
+                            Participated and won first place in a programming competition called “MatHackathon” on the topic
+                            “Procedural content generation”. <span class="tech">React.js</span> was used for the front-end
+                            development, and <span class="tech">Django Python
+                        framework</span> for the back-end.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="left-align light exp">
+                            <span class="text-bold year">October 2018. - April 2019.</span>
+                            <br>
+                            Worked on the development of a web application for the student service of “Računarski fakultet” in
+                            Belgrade, which will be connected to the official website and administration of the faculty. The
+                            front-end was developed in <span class="tech">React.js</span> and the back-end in <span
+                                class="tech">Django Python
+                    framework</span>.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="left-align light exp">
+                            <span class="text-bold year">September 2018. - January 2019.</span>
+                            <br>
+                            Worked as a freelancer for Dabicom Co. D.O.O. and Kolssing D.O.O. The developed desktop application
+                            is intended for reviewing and updating the condition of construction materials and parts, inspection
+                            of employees, bookkeeping of clients and services, monitoring and calculation of employees salaries,
+                            etc. The application was made in <span class="tech">Angular</span> and <span class="tech">Spring boot framework</span>,
+                            while the request for a desktop
+                            application was realized using <span class="tech">ElectronJS</span>.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
-<footer class="page-footer teal">
+<footer class="page-footer">
     <div class="footer-copyright">
         <div>
-            Made by Vladimir Dabic
+            Copyright &copy; 2020 Vladimir Dabic. All Rights Reserved
         </div>
     </div>
 </footer>

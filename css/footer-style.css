@@ -1,8 +1,17 @@
 .page-footer .footer-copyright {
     align-items: center;
     justify-content: center;
-    background-color: teal;
+    background-color: #034159 !important;
 }
+
 footer {
-    background-color: teal;
+
+}
+
+footer div div {
+    font-weight: bolder;
+}
+
+.page-footer {
+    background-color: #4789B3;
 }

@@ -1,3 +1,85 @@
 .text-bold {
     font-weight: bold;
 }
+p {
+    font-size: 1.5em;
+}
+
+.racunarski-link:hover {
+    cursor: pointer;
+}
+.info-heading {
+    color: #034159;
+    font-weight: bolder;
+}
+.my-pink {
+    color: #FA9E7D;
+}
+.my-heading-italic {
+    color: #034159;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.interest-blue {
+    color: #4789B3;
+    font-weight: bolder;
+}
+.year {
+    color: #4789B3;
+}
+.divider {
+    background-color: #034159;
+}
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.exp {
+    border: 1px solid #b3b3b3;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px #b3b3b3;
+    -moz-box-shadow: 5px 5px 5px 0px #b3b3b3;
+    box-shadow: 5px 5px 5px 0px #b3b3b3;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+@media (hover: hover) {
+    .exp:hover {
+        position: relative;
+        left: 15px;
+        cursor: pointer;
+        border: 1px solid #4789B3;
+    }
+}
+.experience-item {
+    display: flex;
+    max-width: 93%;
+    margin: 20px;
+}
+
+.experience-logos {
+    width: 93%;
+    height: 150px;
+    margin: 20px;
+    border: 1px solid #034159;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px #b3b3b3;
+    -moz-box-shadow: 5px 5px 5px 0px #b3b3b3;
+    box-shadow: 5px 5px 5px 0px #b3b3b3;
+}
+
+@media all and (max-width: 600px){
+    .experience-logos {
+        display: none;
+    }
+}
